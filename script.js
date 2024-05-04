@@ -16,18 +16,6 @@ function displayPhotos() {
 // Chame a função para exibir fotos na galeria
 displayPhotos();
 
-// Função para lidar com o envio do formulário de contato
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    
-    
-    const formData = new FormData(this);
-    for (var pair of formData.entries()) {
-        console.log(pair[0] + ': ' + pair[1]);
-    }
-    alert('Mensagem enviada com sucesso!');
-});
 
 // Função para lidar com o envio do formulário de agendamento de sessão fotográfica
 document.getElementById('booking-form').addEventListener('submit', function(event) {
