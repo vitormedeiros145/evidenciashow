@@ -1,0 +1,143 @@
+/* Estilos para a página */
+
+body {
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #add8e6be; /* Azul bebê para o fundo */
+}
+
+header {
+    background-color: #add8e6; /* Azul um pouco mais forte para o cabeçalho */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    transition: transform 0.6s ease;
+}
+
+#titulo {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: transform 0.6s ease;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    text-align: center; /* Alinha as informações ao centro */
+}
+
+footer {
+    background-color: #add8e6; /* Mesmo tom de azul do cabeçalho para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos específicos para cada seção, formulário, etc., podem ser adicionados conforme necessário */
+
+/* Estilos para tornar o site responsivo */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    #portfolio {
+        padding: 10px;
+        
+    }
+    
+    section {
+        padding: 10px;
+        transition: transform 1s ease;
+    }
+    
+    form {
+        margin-bottom: 20px; /* Adiciona espaço entre os formulários */
+    }
+}
+
+/* Estilos específicos para os serviços */
+#services-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#services-description h3 {
+    width: 30%;
+}
+
+#services-description p {
+    width: 30%;
+    margin: 20px auto;
+}
+
+section:hover {
+    transform: scale(1.1);
+  }
+
+
+div:hover {
+    transform: scale(1.1);
+  }
+
+
+  nav ul:hover {
+   transform: scale(1.1);
+    
+  }
+
+  header:hover {
+    transform: scale(1.1);
+  }
+
+  /* Estilo para a caixa de resposta do formulário */
+input {
+    width: 80%; 
+    max-width: 300px; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    outline: none; 
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  
+  /* Estilize a caixa de resposta quando estiver em foco */
+  input:focus {
+    border-color: #007bff; /* Altera a cor da borda para azul quando a caixa de resposta está em foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra suave quando a caixa de resposta está em foco */
+  }
+
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaço entre as fotos */
+}
+
+/* Estilize as fotos */
+.gallery-image {
+    width: 300px; /* Tamanho da foto */
+    height: 300px; /* Tamanho da foto */
+    object-fit: cover; /* Redimensionar a imagem mantendo a proporção e cortando se necessário */
+}
